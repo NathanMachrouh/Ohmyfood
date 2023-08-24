@@ -1,0 +1,10 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .header__location{
+        background-color: $grey2;
+        width: 100%;
+    }
+}

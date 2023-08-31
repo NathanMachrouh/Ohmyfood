@@ -1,11 +1,200 @@
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*DEBUT HEADER*/
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 20px;
+  color: #353535;
 }
 .header .header__location {
+  display: flex;
+  justify-content: center;
   background-color: #EAEAEA;
   width: 100%;
+  padding: 15px 0px;
+  margin-top: 15px;
+  font-weight: 500;
 }
+.header .header__logo {
+  margin-right: 10px;
+  font-size: 22px;
+}
+
+/*FIN HEADER*/
+/*DEBUT DESCRIPTION*/
+.main__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f6f6f6;
+  text-align: center;
+  padding: 60px 0;
+  gap: 35px;
+}
+.main__description .main__description__title {
+  font-size: 30px;
+  width: 90%;
+  font-weight: 500;
+}
+.main__description .main__description__text {
+  font-size: 21px;
+  font-weight: 300;
+  width: 80%;
+  color: #353535;
+}
+.main__description .main__description__btn {
+  background: linear-gradient(to bottom, #FF79DA, #9356DC 100%);
+  padding: 20px;
+  color: white;
+  border-radius: 1.8rem;
+  letter-spacing: 1px;
+  transition: all 0.1s ease-in-out;
+}
+.main__description .main__description__btn:hover {
+  box-shadow: 5px 5px 5px #000;
+  background: linear-gradient(to bottom, #ff93e1, #a16be0 100%);
+}
+
+/*FIN DESCRIPTION*/
+/*DEBUT FONCTIONNEMENT*/
+.main__menu {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+}
+.main__menu .fa-solid {
+  color: #7e7e7e;
+}
+.main__menu .fa-store {
+  color: #9356DC;
+}
+.main__menu .main__menu__title {
+  margin-bottom: 25px;
+  font-size: 30px;
+}
+.main__menu .main__menu__step {
+  max-width: 50rem;
+  display: flex;
+  margin-bottom: 40px;
+  justify-content: flex-start;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #f6f6f6;
+  padding: 10px 0;
+  border-radius: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.main__menu .main__menu__step p,
+.main__menu .main__menu__step i {
+  margin: 0 20px 0 20px;
+}
+.main__menu .main__menu__0 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: -10px;
+  width: 0.5rem;
+  height: 0.5rem;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: #9356DC;
+  color: white;
+}
+
+/*FIN FONCTIONNEMENT*/
+/*DEBUT RESTAURANTS*/
+.main__restaurants {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+  background-color: #f6f6f6;
+  width: 90%;
+}
+.main__restaurants .main__restaurants__title {
+  margin-bottom: 25px;
+  font-size: 30px;
+  font-weight: 500;
+}
+.main__restaurants .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 50rem;
+}
+.main__restaurants .card__content {
+  color: black;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  border-radius: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.421);
+  box-sizing: border-box;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+.main__restaurants .card__content span {
+  position: absolute;
+  border-radius: 3px;
+  padding: 10px 15px;
+  font-weight: 500;
+  color: #008766;
+  background-color: #99E2D0;
+  top: 5%;
+  right: 5%;
+}
+.main__restaurants .card__img {
+  border-radius: 2rem 2rem 0 0;
+  object-position: center;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.main__restaurants .card__info {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px 20px 20px;
+}
+
+/*FIN RESTAURANTS*/
+/*DEBUT FOOTER*/
+.footer {
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+.footer .footer__title {
+  color: white;
+  margin-bottom: 30px;
+  font-family: "Shrikhand";
+  font-weight: 400;
+}
+.footer .footer__nav li {
+  list-style: none;
+  color: white;
+  margin-bottom: 15px;
+  margin-left: -40px;
+}
+.footer .footer__nav a {
+  color: white;
+}
+.footer .footer__nav i {
+  margin-right: 10px;
+}
+
+/*FIN FOOTER*/
 
 /*# sourceMappingURL=style.css.map */

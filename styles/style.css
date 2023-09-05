@@ -10,26 +10,26 @@ a {
 /*DEBUT HEADER*/
 .header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
-  color: #353535;
+  justify-content: center;
+  padding: 0.5rem 0;
 }
-.header .header__location {
+.header h1 {
+  text-align: center;
+  color: black;
+  font-family: "Shrikhand";
+  font-weight: 500;
+}
+
+/*FIN HEADER*/
+.location {
   display: flex;
   justify-content: center;
   background-color: #EAEAEA;
   width: 100%;
-  padding: 15px 0px;
-  margin-top: 15px;
+  padding: 1.5rem 0;
   font-weight: 500;
 }
-.header .header__logo {
-  margin-right: 10px;
-  font-size: 22px;
-}
 
-/*FIN HEADER*/
 /*DEBUT DESCRIPTION*/
 .main__description {
   display: flex;
@@ -40,15 +40,15 @@ a {
   padding: 60px 0;
   gap: 35px;
 }
-.main__description .main__description__title {
+.main__description h1 {
   font-size: 30px;
   width: 90%;
   font-weight: 500;
 }
-.main__description .main__description__text {
-  font-size: 21px;
+.main__description p {
+  font-size: 18px;
   font-weight: 300;
-  width: 80%;
+  width: 92%;
   color: #353535;
 }
 .main__description .main__description__btn {
@@ -77,7 +77,7 @@ a {
 .main__menu .fa-store {
   color: #9356DC;
 }
-.main__menu .main__menu__title {
+.main__menu h2 {
   margin-bottom: 25px;
   font-size: 30px;
 }
@@ -119,12 +119,12 @@ a {
   flex-direction: column;
   padding: 40px 20px;
   background-color: #f6f6f6;
-  width: 90%;
 }
-.main__restaurants .main__restaurants__title {
+.main__restaurants h2 {
   margin-bottom: 25px;
   font-size: 30px;
   font-weight: 500;
+  text-align: start;
 }
 .main__restaurants .card {
   display: flex;
@@ -134,14 +134,13 @@ a {
 }
 .main__restaurants .card a {
   color: black;
+  background-color: white;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
   border-radius: 2rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.421);
-  box-sizing: border-box;
   gap: 20px;
   margin-bottom: 50px;
 }
@@ -168,6 +167,9 @@ a {
   margin: 0 20px 20px 20px;
   position: relative;
 }
+.main__restaurants .card a .card__info h3 {
+  font-weight: 500;
+}
 .main__restaurants .card a i {
   position: absolute;
   right: 1%;
@@ -182,7 +184,6 @@ a {
 }
 .main__restaurants .card a .fa-solid:hover {
   opacity: 1;
-  transition: all 0.4s ease-in-out;
 }
 
 /*FIN RESTAURANTS*/
@@ -199,19 +200,106 @@ a {
   font-family: "Shrikhand";
   font-weight: 400;
 }
-.footer .footer__nav li {
+.footer li {
   list-style: none;
   color: white;
   margin-bottom: 15px;
   margin-left: -40px;
 }
-.footer .footer__nav li a {
+.footer li a {
   color: white;
 }
-.footer .footer__nav li i {
+.footer li i {
   margin-right: 10px;
 }
 
 /*FIN FOOTER*/
+/*MEDIA QUERIES TABLET*/
+@media (min-width: 800px) {
+  .main__menu {
+    align-items: center;
+  }
+  .main__menu .main__menu__step {
+    width: 30rem;
+  }
+  .main__menu .main__menu__step p {
+    margin-left: 5rem;
+  }
+  .main__restaurants {
+    align-items: center;
+  }
+  .main__restaurants .card {
+    width: 70%;
+  }
+}
+/*MEDIA QUERIES SMARTPHONE*/
+@media (min-width: 1124px) {
+  * {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .main__description h1 {
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .main__menu {
+    align-items: inherit;
+    padding: 2rem 5rem 0;
+  }
+  .main__menu h2 {
+    margin-left: 20px;
+  }
+  .main__menu .main__menu__container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .main__menu .main__menu__container .main__menu__step {
+    width: 28%;
+    border-radius: 1rem;
+  }
+  .main__menu .main__menu__container .main__menu__step p {
+    width: 100%;
+    margin: 0.5rem 1rem 0.5rem 0;
+    font-size: 16px;
+  }
+  .main__restaurants {
+    padding: 2rem 5rem 3rem;
+    max-width: 1440px;
+    display: inherit;
+  }
+  .main__restaurants h2 {
+    margin: 2rem;
+  }
+  .main__restaurants .card {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 80rem;
+    margin: 0;
+  }
+  .main__restaurants .card a {
+    width: 45%;
+  }
+  .main__restaurants .card a h3, .main__restaurants .card a p {
+    margin: 0;
+  }
+  .footer {
+    flex-direction: row-reverse;
+    gap: 4rem;
+    padding: 2rem 0 0 0;
+  }
+  .footer h2 {
+    margin: 0 7rem 0 0;
+  }
+  .footer ul {
+    margin: 0.5rem 0 0 0;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -11,6 +11,7 @@ a {
 .header {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 0.5rem 0;
 
     h1 {
@@ -81,14 +82,6 @@ a {
     flex-direction: column;
     padding: 40px 20px;
 
-    .fa-solid {
-        color: #7e7e7e;
-    }
-
-    .fa-store {
-        color: $primary;
-    }
-
     h2 {
         margin-bottom: 25px;
         font-size: 30px;
@@ -106,6 +99,14 @@ a {
         border-radius: 25px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, .200);
         cursor: pointer;
+
+        i{
+            color: #7e7e7e;
+        }
+
+        .fa-store {
+            color: $primary;
+        }
     }
 
     .main__menu__step p,

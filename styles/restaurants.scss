@@ -96,6 +96,11 @@ main {
                 text-overflow: ellipsis;
                 padding: 0.6rem;
 
+                h4 {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
                 p {
                     overflow: hidden;
                     text-overflow: ellipsis;
@@ -113,8 +118,9 @@ main {
             }
 
             .meal__check {
-                display: grid;
-                place-items: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 margin-right: -4rem;
                 width: 4rem;
                 background-color: $green;
@@ -123,12 +129,15 @@ main {
                 font-size: 1.5rem;
             }
 
-            &:hover .meal {
-                margin-right: 0;
-                
-                i{
-                    @include animation.animation;
-                    animation: animation 0.5s ease-in-out;
+            &:hover {
+
+                .meal__check {
+                    margin-right: 0;
+
+                    i {
+                        @include animation.animation;
+                        animation: animation 0.5s ease-in-out;
+                    }
                 }
             }
         }

@@ -383,6 +383,10 @@ main .main__menu .meal .meal__description {
   text-overflow: ellipsis;
   padding: 0.6rem;
 }
+main .main__menu .meal .meal__description h4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 main .main__menu .meal .meal__description p {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -396,8 +400,9 @@ main .main__menu .meal .meal__price {
   padding: 2.4rem 0.6rem 0 0;
 }
 main .main__menu .meal .meal__check {
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-right: -4rem;
   width: 4rem;
   background-color: #99E2D0;
@@ -405,18 +410,18 @@ main .main__menu .meal .meal__check {
   color: white;
   font-size: 1.5rem;
 }
-main .main__menu .meal:hover .meal {
+main .main__menu .meal:hover .meal__check {
   margin-right: 0;
 }
-main .main__menu .meal:hover .meal i {
+main .main__menu .meal:hover .meal__check i {
   animation: animation 0.5s ease-in-out;
 }
 @keyframes animation {
   0% {
-    transform: rotate(0);
+    transform: rotate(-180deg);
   }
   100% {
-    transform: rotate(180deg);
+    transform: rotate(0);
   }
 }
 main .main__menu__btn {

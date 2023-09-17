@@ -1,4 +1,5 @@
 @use './animation';
+@import './animation.scss';
 
 .header {
     position: relative;
@@ -89,23 +90,29 @@ main {
             cursor: pointer;
             overflow: hidden;
             width: 96%;
+            @include menu_appear;
+            animation: appear 1s;
+            animation-fill-mode: both;
 
             .meal__description {
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
                 padding: 0.6rem;
+                box-sizing: border-box;
+                margin-right: -17px;
 
                 h4 {
                     overflow: hidden;
                     text-overflow: ellipsis;
+                    font-size: 20px;
                 }
 
                 p {
                     overflow: hidden;
                     text-overflow: ellipsis;
                     font-weight: 200;
-                    font-size: 1.2rem;
+                    font-size: 15px;
                 }
 
             }
@@ -133,9 +140,10 @@ main {
 
                 .meal__check {
                     margin-right: 0;
+                    z-index: 10;
+                    box-sizing: border-box;
 
                     i {
-                        @include animation.animation;
                         animation: animation 0.5s ease-in-out;
                     }
                 }
@@ -210,7 +218,8 @@ main {
 
             .meal {
                 .meal__description {
-                    width: 80%;
+                    width: 100%;
+                    margin-left: 10px;
                 }
             }
         }

@@ -233,7 +233,7 @@ a {
 .main__restaurants .card a .fa-solid {
   color: transparent;
   background: linear-gradient(to bottom, #ff93e1, #a16be0 100%);
-  background-clip: text;
+  -webkit-background-clip: text;
   opacity: 0;
   transition: all 0.4s ease-in-out;
 }
@@ -428,7 +428,7 @@ main .main__banner {
 }
 main .main__menu {
   position: relative;
-  top: -5rem;
+  top: -3rem;
   border-radius: 2rem 2rem 0 0;
   flex-wrap: wrap;
   background-color: #f6f6f6;
@@ -448,7 +448,7 @@ main .main__menu .main__menu__title i {
 main .main__menu .main__menu__title .fa-solid {
   color: transparent;
   background: linear-gradient(to bottom, #ff93e1, #a16be0 100%);
-  background-clip: text;
+  -webkit-background-clip: text;
   opacity: 0;
   transition: all 0.4s ease-in-out;
 }
@@ -458,8 +458,11 @@ main .main__menu .main__menu__title .fa-solid:hover {
 main .main__menu .meal {
   display: flex;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.421);
+  background-color: white;
   border-radius: 0.6rem;
   margin-top: 1.25rem;
+  margin-left: auto;
+  margin-right: auto;
   cursor: pointer;
   overflow: hidden;
   width: 96%;
@@ -505,9 +508,9 @@ main .main__menu .meal .meal__description p {
 }
 main .main__menu .meal .meal__price {
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-left: auto;
-  padding: 2.4rem 0.6rem 0 0;
+  padding: 2rem 0.6rem 0 0;
 }
 main .main__menu .meal .meal__check {
   display: flex;
@@ -562,6 +565,7 @@ main .main__menu__btn:hover {
 @media (min-width: 1124px) {
   .main__menu {
     padding-bottom: 5rem;
+    width: 50rem;
   }
   .main__menu h2 {
     margin-left: inherit;

@@ -265,7 +265,7 @@ a {
             .fa-solid {
                 color: transparent;
                 background: linear-gradient(to bottom, #ff93e1, #a16be0 100%);
-                background-clip: text;
+                -webkit-background-clip: text;
                 opacity: 0;
                 transition: all .4s ease-in-out;
 

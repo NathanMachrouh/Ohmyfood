@@ -54,7 +54,7 @@ main {
         flex-wrap: wrap;
         background-color: $grey1;
         gap: 2rem;
-        margin-bottom: -5rem;
+        margin-bottom: -3rem;
 
         .main__menu__title {
             font-family: "Shrikhand";
@@ -198,8 +198,8 @@ main {
 @media (min-width: 1124px) {
 
     .main__menu {
-        padding-bottom: 5rem;
-        width: 50rem;
+        padding-bottom: 2rem;
+        width: 60rem;
 
         h2 {
             margin-left: inherit;

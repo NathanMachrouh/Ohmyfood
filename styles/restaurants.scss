@@ -47,23 +47,32 @@ main {
     }
 
     .main__menu {
-
         position: relative;
         top: -3rem;
         border-radius: 2rem 2rem 0 0;
         flex-wrap: wrap;
         background-color: $grey1;
-        gap: 2rem;
+        padding-bottom: 2.5rem;
         margin-bottom: -3rem;
+
+        .main__menu__starter,
+        .main__menu__dish,
+        .main__menu__dessert {
+            margin-bottom: 2.5rem;
+        }
 
         .main__menu__title {
             font-family: "Shrikhand";
             font-weight: 500;
+            font-size: 1.8rem;
             position: relative;
+            padding: 2rem 2rem 3rem 1rem;
+            align-items: inherit;
 
             i {
                 position: absolute;
-                right: 1rem;
+                margin-left: 3rem;
+                top: 2.5rem;
                 font-size: 25px;
             }
 
@@ -92,7 +101,7 @@ main {
             margin-right: auto;
             cursor: pointer;
             overflow: hidden;
-            width: 96%;
+            width: 94%;
             @include menu_appear;
             animation: appear 1s;
             animation-fill-mode: both;
@@ -155,11 +164,13 @@ main {
     }
 
     .main__menu__btn {
-        text-align: center;
-        margin: auto;
-        width: 9rem;
+        display: flex;
+        justify-content: center;
+        width: 5rem;
+        margin-left: auto;
+        margin-right: auto;
         background: linear-gradient(to bottom, #FF79DA, #9356DC 100%);
-        padding: 20px;
+        padding: 20px 50px;
         color: white;
         border-radius: 1.8rem;
         letter-spacing: 1px;
@@ -175,9 +186,9 @@ main {
 @media (min-width: 800px) {
 
     .main__menu {
-
+        
         .main__menu__title {
-            position: relative;
+            text-align: center;
 
             i {
                 top: 0.3rem;
@@ -190,6 +201,8 @@ main {
         .main__menu__dish,
         .main__menu__dessert {
             width: 30rem;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 

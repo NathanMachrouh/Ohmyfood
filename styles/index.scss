@@ -23,13 +23,15 @@ a {
 }
 
 @keyframes loader-bg {
-    0%{
+    0% {
         opacity: 1;
     }
-    50%{
+
+    50% {
         opacity: 1;
     }
-    100%{
+
+    100% {
         opacity: 0;
         visibility: hidden;
     }
@@ -47,7 +49,7 @@ a {
     max-width: initial;
     animation: loader-bg 1.5s linear;
     animation-fill-mode: forwards;
-    
+
 }
 
 .loading {
@@ -137,58 +139,61 @@ a {
 /*FIN DESCRIPTION*/
 
 /*DEBUT FONCTIONNEMENT*/
-.main__menu {
-    display: flex;
-    flex-direction: column;
-    padding: 40px 20px;
-    margin-bottom: 1px;
-
-    .main__menu__front__title {
-        margin-bottom: 25px;
-        font-size: 30px;
-        margin-left: 20px;
-    }
-
-    .main__menu__step {
-        max-width: 50rem;
+.main__container {
+    .main__front {
         display: flex;
-        margin-bottom: 40px;
-        justify-content: flex-start;
-        font-size: 20px;
-        font-weight: 500;
-        background-color: $grey1;
-        padding: 10px 0;
-        border-radius: 25px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, .200);
-        cursor: pointer;
-
-        i {
-            color: #7e7e7e;
-        }
-
-        .fa-store {
-            color: $primary;
-        }
-    }
-
-    .main__menu__step p,
-    .main__menu__step i {
-        margin: 0 20px 0 20px;
-    }
-
-    .main__menu__0 {
-        display: flex;
-        justify-content: center;
         flex-direction: column;
-        margin-left: -10px;
-        width: 0.5rem;
-        height: 0.5rem;
-        font-size: 15px;
-        padding: 10px;
-        border-radius: 50px;
-        background-color: $primary;
-        color: white;
+        padding: 40px 20px;
+        margin-bottom: 1px;
+
+        .main__menu__front__title {
+            margin-bottom: 25px;
+            font-size: 30px;
+            margin-left: 20px;
+        }
+
+        .main__menu__step {
+            max-width: 50rem;
+            display: flex;
+            margin-bottom: 40px;
+            justify-content: flex-start;
+            font-size: 20px;
+            font-weight: 500;
+            background-color: $grey1;
+            padding: 10px 0;
+            border-radius: 25px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, .200);
+            cursor: pointer;
+
+            i {
+                color: #7e7e7e;
+            }
+
+            .fa-store {
+                color: $primary;
+            }
+        }
+
+        .main__menu__step p,
+        .main__menu__step i {
+            margin: 0 20px 0 20px;
+        }
+
+        .main__menu__0 {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin-left: -10px;
+            width: 0.5rem;
+            height: 0.5rem;
+            font-size: 15px;
+            padding: 10px;
+            border-radius: 50px;
+            background-color: $primary;
+            color: white;
+        }
     }
+
 }
 
 /*FIN FONCTIONNEMENT*/
@@ -316,18 +321,20 @@ a {
 /*MEDIA QUERIES TABLET*/
 
 @media (min-width: 800px) {
+    .main__container {
 
-    .main__menu {
-        align-items: center;
+        .main__front {
+            align-items: center;
 
-        .main__menu__step {
-            width: 30rem;
+            .main__menu__step {
+                width: 30rem;
 
-            p {
-                margin-left: 5rem;
+                p {
+                    margin-left: 5rem;
+                }
             }
-        }
 
+        }
     }
 
     .main__restaurants {
@@ -357,31 +364,36 @@ a {
 
     }
 
-    .main__menu {
-        align-items: inherit;
-        padding: 2rem 5rem 0;
+    .main__container {
 
-        h2 {
-            margin-left: 20px;
-        }
+        .main__front {
+            align-items: inherit;
+            padding: 2rem 5rem 0;
 
-        .main__menu__container {
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
 
-            .main__menu__step {
-                width: 28%;
-                border-radius: 1rem;
+            h2 {
+                margin-left: 20px;
+            }
 
-                p {
-                    width: 100%;
-                    margin: 0.5rem 1rem 0.5rem 0;
-                    font-size: 16px;
+            .main__menu__container {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+
+                .main__menu__step {
+                    width: 28%;
+                    border-radius: 1rem;
+
+                    p {
+                        width: 100%;
+                        margin: 0.5rem 1rem 0.5rem 0;
+                        font-size: 16px;
+                    }
                 }
             }
         }
     }
+
 
     .main__restaurants {
         padding: 2rem 5rem 3rem;

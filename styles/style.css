@@ -121,18 +121,18 @@ a {
 
 /*FIN DESCRIPTION*/
 /*DEBUT FONCTIONNEMENT*/
-.main__menu {
+.main__container .main__front {
   display: flex;
   flex-direction: column;
   padding: 40px 20px;
   margin-bottom: 1px;
 }
-.main__menu .main__menu__front__title {
+.main__container .main__front .main__menu__front__title {
   margin-bottom: 25px;
   font-size: 30px;
   margin-left: 20px;
 }
-.main__menu .main__menu__step {
+.main__container .main__front .main__menu__step {
   max-width: 50rem;
   display: flex;
   margin-bottom: 40px;
@@ -145,17 +145,17 @@ a {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
-.main__menu .main__menu__step i {
+.main__container .main__front .main__menu__step i {
   color: #7e7e7e;
 }
-.main__menu .main__menu__step .fa-store {
+.main__container .main__front .main__menu__step .fa-store {
   color: #9356DC;
 }
-.main__menu .main__menu__step p,
-.main__menu .main__menu__step i {
+.main__container .main__front .main__menu__step p,
+.main__container .main__front .main__menu__step i {
   margin: 0 20px 0 20px;
 }
-.main__menu .main__menu__0 {
+.main__container .main__front .main__menu__0 {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -273,13 +273,13 @@ a {
 /*FIN FOOTER*/
 /*MEDIA QUERIES TABLET*/
 @media (min-width: 800px) {
-  .main__menu {
+  .main__container .main__front {
     align-items: center;
   }
-  .main__menu .main__menu__step {
+  .main__container .main__front .main__menu__step {
     width: 30rem;
   }
-  .main__menu .main__menu__step p {
+  .main__container .main__front .main__menu__step p {
     margin-left: 5rem;
   }
   .main__restaurants {
@@ -299,23 +299,23 @@ a {
     font-size: 40px;
     font-weight: 700;
   }
-  .main__menu {
+  .main__container .main__front {
     align-items: inherit;
     padding: 2rem 5rem 0;
   }
-  .main__menu h2 {
+  .main__container .main__front h2 {
     margin-left: 20px;
   }
-  .main__menu .main__menu__container {
+  .main__container .main__front .main__menu__container {
     display: flex;
     justify-content: space-between;
     width: 100%;
   }
-  .main__menu .main__menu__container .main__menu__step {
+  .main__container .main__front .main__menu__container .main__menu__step {
     width: 28%;
     border-radius: 1rem;
   }
-  .main__menu .main__menu__container .main__menu__step p {
+  .main__container .main__front .main__menu__container .main__menu__step p {
     width: 100%;
     margin: 0.5rem 1rem 0.5rem 0;
     font-size: 16px;
@@ -434,17 +434,26 @@ main .main__menu {
   border-radius: 2rem 2rem 0 0;
   flex-wrap: wrap;
   background-color: #f6f6f6;
-  gap: 2rem;
+  padding-bottom: 2.5rem;
   margin-bottom: -3rem;
+}
+main .main__menu .main__menu__starter,
+main .main__menu .main__menu__dish,
+main .main__menu .main__menu__dessert {
+  margin-bottom: 2.5rem;
 }
 main .main__menu .main__menu__title {
   font-family: "Shrikhand";
   font-weight: 500;
+  font-size: 1.8rem;
   position: relative;
+  padding: 2rem 2rem 3rem 1rem;
+  align-items: inherit;
 }
 main .main__menu .main__menu__title i {
   position: absolute;
-  right: 1rem;
+  margin-left: 3rem;
+  top: 2.5rem;
   font-size: 25px;
 }
 main .main__menu .main__menu__title .fa-solid {
@@ -467,7 +476,7 @@ main .main__menu .meal {
   margin-right: auto;
   cursor: pointer;
   overflow: hidden;
-  width: 96%;
+  width: 94%;
   animation: appear 1s;
   animation-fill-mode: both;
 }
@@ -534,11 +543,13 @@ main .main__menu .meal:hover .meal__check i {
   animation: animation 0.5s ease-in-out;
 }
 main .main__menu__btn {
-  text-align: center;
-  margin: auto;
-  width: 9rem;
+  display: flex;
+  justify-content: center;
+  width: 5rem;
+  margin-left: auto;
+  margin-right: auto;
   background: linear-gradient(to bottom, #FF79DA, #9356DC 100%);
-  padding: 20px;
+  padding: 20px 50px;
   color: white;
   border-radius: 1.8rem;
   letter-spacing: 1px;
@@ -551,7 +562,7 @@ main .main__menu__btn:hover {
 
 @media (min-width: 800px) {
   .main__menu .main__menu__title {
-    position: relative;
+    text-align: center;
   }
   .main__menu .main__menu__title i {
     top: 0.3rem;
@@ -562,6 +573,8 @@ main .main__menu__btn:hover {
   .main__menu .main__menu__dish,
   .main__menu .main__menu__dessert {
     width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media (min-width: 1124px) {

@@ -170,6 +170,7 @@ a {
 /*FIN FONCTIONNEMENT*/
 
 /*DEBUT RESTAURANTS*/
+main{
 .main__restaurants {
     display: flex;
     flex-direction: column;
@@ -251,6 +252,7 @@ a {
             }
         }
     }
+}
 }
 
 /*FIN RESTAURANTS*/

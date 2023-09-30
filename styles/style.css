@@ -148,25 +148,25 @@ a {
 
 /*FIN FONCTIONNEMENT*/
 /*DEBUT RESTAURANTS*/
-.main__restaurants {
+main .main__restaurants {
   display: flex;
   flex-direction: column;
   padding: 40px 20px;
   background-color: #f6f6f6;
 }
-.main__restaurants h2 {
+main .main__restaurants h2 {
   margin-bottom: 25px;
   font-size: 30px;
   font-weight: 500;
   text-align: start;
 }
-.main__restaurants .card {
+main .main__restaurants .card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   max-width: 50rem;
 }
-.main__restaurants .card a {
+main .main__restaurants .card a {
   color: black;
   background-color: white;
   position: relative;
@@ -178,7 +178,7 @@ a {
   gap: 20px;
   margin-bottom: 50px;
 }
-.main__restaurants .card a .new {
+main .main__restaurants .card a .new {
   position: absolute;
   border-radius: 3px;
   padding: 10px 15px;
@@ -188,35 +188,35 @@ a {
   top: 5%;
   right: 5%;
 }
-.main__restaurants .card a img {
+main .main__restaurants .card a img {
   border-radius: 2rem 2rem 0 0;
   object-position: center;
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
-.main__restaurants .card a .card__info {
+main .main__restaurants .card a .card__info {
   display: flex;
   flex-direction: column;
   margin: 0 20px 20px 20px;
   position: relative;
 }
-.main__restaurants .card a .card__info h3 {
+main .main__restaurants .card a .card__info h3 {
   font-weight: 500;
 }
-.main__restaurants .card a i {
+main .main__restaurants .card a i {
   position: absolute;
   right: 1%;
   font-size: 25px;
 }
-.main__restaurants .card a .fa-solid {
+main .main__restaurants .card a .fa-solid {
   color: transparent;
   background: linear-gradient(to bottom, #ff93e1, #a16be0 100%);
   -webkit-background-clip: text;
   opacity: 0;
   transition: all 0.4s ease-in-out;
 }
-.main__restaurants .card a .fa-solid:hover {
+main .main__restaurants .card a .fa-solid:hover {
   opacity: 1;
 }
 
@@ -428,14 +428,14 @@ a {
   font-size: 1.5rem;
 }
 
-main h3 {
+.main h3 {
   position: relative;
   margin-bottom: 1.875rem;
   padding-left: 0.625rem;
   font-weight: 300;
   text-transform: uppercase;
 }
-main h3::before {
+.main h3::before {
   content: "";
   position: absolute;
   bottom: -0.6rem;
@@ -443,11 +443,11 @@ main h3::before {
   height: 0.3rem;
   background-color: #99e2d0;
 }
-main h4 {
+.main h4 {
   font-size: 1.5rem;
   font-weight: 500;
 }
-main .main__banner {
+.main .main__banner {
   object-fit: cover;
   object-position: center;
   width: 100%;
@@ -455,7 +455,7 @@ main .main__banner {
   max-height: 40vh;
   min-height: 30vh;
 }
-main .main__menu {
+.main .main__menu {
   position: relative;
   top: -3rem;
   border-radius: 2rem 2rem 0 0;
@@ -464,12 +464,12 @@ main .main__menu {
   padding-bottom: 2.5rem;
   margin-bottom: -3rem;
 }
-main .main__menu .main__menu__starter,
-main .main__menu .main__menu__dish,
-main .main__menu .main__menu__dessert {
+.main .main__menu .main__menu__starter,
+.main .main__menu .main__menu__dish,
+.main .main__menu .main__menu__dessert {
   margin-bottom: 2.5rem;
 }
-main .main__menu .main__menu__title {
+.main .main__menu .main__menu__title {
   font-family: "Shrikhand";
   font-weight: 500;
   font-size: 1.8rem;
@@ -477,23 +477,23 @@ main .main__menu .main__menu__title {
   padding: 2rem 2rem 3rem 1rem;
   align-items: inherit;
 }
-main .main__menu .main__menu__title i {
+.main .main__menu .main__menu__title i {
   position: absolute;
   margin-left: 3rem;
   top: 2.5rem;
   font-size: 25px;
 }
-main .main__menu .main__menu__title .fa-solid {
+.main .main__menu .main__menu__title .fa-solid {
   color: transparent;
   background: linear-gradient(to bottom, #ff93e1, #a16be0 100%);
   -webkit-background-clip: text;
   opacity: 0;
   transition: all 0.4s ease-in-out;
 }
-main .main__menu .main__menu__title .fa-solid:hover {
+.main .main__menu .main__menu__title .fa-solid:hover {
   opacity: 1;
 }
-main .main__menu .meal {
+.main .main__menu .meal {
   display: flex;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.421);
   background-color: white;
@@ -507,25 +507,25 @@ main .main__menu .meal {
   animation: appear 1s;
   animation-fill-mode: both;
 }
-main .main__menu .meal:nth-child(1) {
+.main .main__menu .meal:nth-child(1) {
   animation-delay: 100ms;
 }
-main .main__menu .meal:nth-child(2) {
+.main .main__menu .meal:nth-child(2) {
   animation-delay: 200ms;
 }
-main .main__menu .meal:nth-child(3) {
+.main .main__menu .meal:nth-child(3) {
   animation-delay: 300ms;
 }
-main .main__menu .meal:nth-child(4) {
+.main .main__menu .meal:nth-child(4) {
   animation-delay: 400ms;
 }
-main .main__menu .meal:nth-child(5) {
+.main .main__menu .meal:nth-child(5) {
   animation-delay: 500ms;
 }
-main .main__menu .meal:nth-child(6) {
+.main .main__menu .meal:nth-child(6) {
   animation-delay: 600ms;
 }
-main .main__menu .meal .meal__description {
+.main .main__menu .meal .meal__description {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -533,24 +533,24 @@ main .main__menu .meal .meal__description {
   box-sizing: border-box;
   margin-right: -17px;
 }
-main .main__menu .meal .meal__description h4 {
+.main .main__menu .meal .meal__description h4 {
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 20px;
 }
-main .main__menu .meal .meal__description p {
+.main .main__menu .meal .meal__description p {
   overflow: hidden;
   text-overflow: ellipsis;
   font-weight: 200;
   font-size: 15px;
 }
-main .main__menu .meal .meal__price {
+.main .main__menu .meal .meal__price {
   font-weight: 500;
   font-size: 1rem;
   margin-left: auto;
   padding: 2rem 0.6rem 0 0;
 }
-main .main__menu .meal .meal__check {
+.main .main__menu .meal .meal__check {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -561,15 +561,15 @@ main .main__menu .meal .meal__check {
   color: white;
   font-size: 1.5rem;
 }
-main .main__menu .meal:hover .meal__check {
+.main .main__menu .meal:hover .meal__check {
   margin-right: 0;
   z-index: 10;
   box-sizing: border-box;
 }
-main .main__menu .meal:hover .meal__check i {
+.main .main__menu .meal:hover .meal__check i {
   animation: animation 0.5s ease-in-out;
 }
-main .main__menu__btn {
+.main .main__menu__btn {
   display: flex;
   justify-content: center;
   width: 5rem;
@@ -582,7 +582,7 @@ main .main__menu__btn {
   letter-spacing: 1px;
   transition: all 0.4s ease-in-out;
 }
-main .main__menu__btn:hover {
+.main .main__menu__btn:hover {
   box-shadow: 5px 5px 5px #000;
   background: linear-gradient(to bottom, #ff93e1, #a16be0 100%);
 }
